@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom property</title>
+    <style>
+        :root {
+            --main-color:red;
+            --side-width:200px;
+        }
+        h1 {
+            color:var(--main-color);
+        }
+        p {
+            color: slateblue;
+        }
+        p {
+            color: slateblue;
+        }
+        footer {
+            color: slateblue;
+            clear: both;
+        }
+        h2 {
+            border: solid coral;
+            color: slateblue;
+
+        }
+        h6 {
+            background-color: slateblue;
+        }
+        .side-nav,
+        .blog{
+             float: left;
+            height: 500px;
+        }
+        aside{
+            
+            width:200px;
+            background-color: springgreen;
+
+        }
+        .blog{
+               
+                width:calc(100%-200px);
+                background-color: tomato;
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>I am exploring Custom property css </h1>
+    </header>
+    <main>
+            <h2>my content</h2>
+            <h6>my tiny heading</h6>
+            <section>
+                <aside class="side-nav">
+                    my side nevigation
+                </aside>
+                <div class="blog">
+                    <h2>blogs</h2>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <p>copyright 2022</p>
+    </footer>
+
+</body>
+</html>
